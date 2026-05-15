@@ -24,10 +24,7 @@ This project aims to:
   - Brown Spot
   - Leaf Smut
 
-### 📊 Performance
-- Training Accuracy: ~75%
-- Validation Accuracy: ~79–82%
-- Test Accuracy: **~93%**
+
 
 ---
 
