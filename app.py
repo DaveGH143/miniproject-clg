@@ -1,36 +1,4 @@
-# import streamlit as st
-# import tensorflow as tf
-# import numpy as np
-# from PIL import Image
-# import os
 
-# # Load model
-
-# BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-# model_path = os.path.join(BASE_DIR, "model.h5")
-
-# model = tf.keras.models.load_model(model_path)
-
-# class_names = ['Bacterial leaf blight', 'Brown spot', 'Leaf smut']
-
-# st.title("🌾 Rice Leaf Disease Detector")
-
-# uploaded_file = st.file_uploader("Upload a leaf image", type=["jpg","png","jpeg"])
-
-# if uploaded_file is not None:
-#     image = Image.open(uploaded_file)
-#     st.image(image, caption="Uploaded Image", use_column_width=True)
-
-#     img = image.resize((180,180))
-#     img = np.array(img)/255.0
-#     img = np.expand_dims(img, axis=0)
-
-#     prediction = model.predict(img)
-#     idx = np.argmax(prediction)
-#     confidence = np.max(prediction)*100
-
-#     st.success(f"Prediction: {class_names[idx]}")
-#     st.info(f"Confidence: {confidence:.2f}%")
 
 import streamlit as st
 import tensorflow as tf
